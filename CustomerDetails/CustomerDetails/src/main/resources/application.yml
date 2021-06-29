@@ -1,0 +1,19 @@
+ server:
+  port: 8081
+ 
+ spring:
+  application:
+    name: customer-service
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1234
+  jpa:
+   hibernate:
+    ddl-auto: update
+   database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+   show-sql: true
+  springdoc:
+    packagesToScan: com.customer.CustomerDetails
+   
